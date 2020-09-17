@@ -8,7 +8,7 @@ inputs: # <-- Allows us to specify data that the action expects to use during ru
     default: 'Awesome Architect'
 outputs: # <-- Output parameters allow you to take the action setup that has been run previously in the build & put them at the end of the build log
   myOutput:
-    decription: 'total memory'
+    description: 'total memory'
 runs:
   using: 'docker'
   image: 'Dockerfile'
