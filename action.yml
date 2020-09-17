@@ -1,0 +1,14 @@
+name: 'my first container action'
+description: 'Linux Academy'
+author: 'Robert Luna'
+inputs: # <-- Allows us to specify data that the action expects to use during runtime stored as environment variables
+  myInput:
+    description: 'greeting to use'
+    required: true
+    default: 'Awesome Architect'
+outputs: # <-- Output parameters allow you to take the action setup that has been run previously in the build & put them at the end of the build log
+  myOutput:
+    decription: 'total memory'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
